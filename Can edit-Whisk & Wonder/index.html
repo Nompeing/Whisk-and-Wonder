@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisk & Wonder</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<!-- TOP AWNING -->
+<header>
+
+    <div class="awning">
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo">
+        <div class="logo-star">✦</div>
+
+        <div>
+            <h1>Whisk & Wonder</h1>
+            <p>Find something delicious</p>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="index.html" class="active">
+            <span>⌂</span>
+            Home
+        </a>
+
+        <a href="recipes.html">
+            <span>♡</span>
+            Recipes
+        </a>
+
+        <a href="ingredients.html">
+            <span>✿</span>
+            Ingredients
+        </a>
+
+        <a href="favorites.html">
+            <span>♥</span>
+            Favorites
+        </a>
+
+        <a href="contact.html">
+            <span>✉</span>
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="mini-title">WELCOME TO WHISK & WONDER</p>
+
+        <h2>
+            What's in your
+            <span>kitchen?</span>
+        </h2>
+
+        <p>
+            Have an ingredient but don't know what to make?
+            Find a delicious idea and turn simple ingredients
+            into something wonderful.
+        </p>
+        <h3>º∙👩🏻‍🍳 ₊˚🍪 ˚ෆ🥧‧₊୨୧｡*ﾟ</h3>
+
+        <div class="search">
+
+            <input
+                type="text"
+                id="homeSearch"
+                placeholder="Try strawberry, banana..."
+            >
+
+            <button onclick="searchHome()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOVING ADVERTISEMENT -->
+    <div class="ad-box">
+
+        <div class="ad-slide active-slide">
+
+            <div class="food-picture strawberry">
+                🍓
+            </div>
+
+            <h3>Have strawberries?</h3>
+
+            <p>
+                Discover sweet recipes you can make!
+            </p>
+
+            <a href="recipes.html">
+                Explore recipes →
+            </a>
+
+        </div>
+
+
+        <div class="ad-slide">
+
+            <div class="food-picture banana">
+                🍌
+            </div>
+
+            <h3>Got bananas?</h3>
+
+            <p>
+                Turn them into pancakes, muffins and more.
+            </p>
+
+            <a href="recipes.html">
+                Find ideas →
+            </a>
+
+        </div>
+
+
+        <div class="ad-slide">
+
+            <div class="food-picture chocolate">
+                🍫
+            </div>
+
+            <h3>Craving chocolate?</h3>
+
+            <p>
+                Find an easy chocolate dessert.
+            </p>
+
+            <a href="recipes.html">
+                Let's bake →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="how">
+
+    <p class="mini-title">HOW IT WORKS</p>
+
+    <h2>From ingredient to idea</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <div>01</div>
+            <h3>Choose</h3>
+            <p>
+                Pick an ingredient you already have.
+            </p>
+        </div>
+
+        <div class="step">
+            <div>02</div>
+            <h3>Discover</h3>
+            <p>
+                Find recipes that use your ingredient.
+            </p>
+        </div>
+
+        <div class="step">
+            <div>03</div>
+            <h3>Make it</h3>
+            <p>
+                Follow the instructions and enjoy!
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- POPULAR RECIPES -->
+
+<section class="popular">
+
+    <p class="mini-title">A LITTLE INSPIRATION</p>
+
+    <h2>Popular this week</h2>
+
+    <div class="home-cards">
+
+        <div class="food-card">
+
+            <img src="https://i.pinimg.com/1200x/63/64/21/6364217e46e1f7869aea3b9272f881de.jpg">
+
+            <h3>Strawberry Shortcake</h3>
+
+            <p>Easy • 25 min</p>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://i.pinimg.com/736x/8c/3d/18/8c3d1847de58051eb8a8fc4b2f681cdf.jpg">
+
+            <h3>Chocolate Brownies</h3>
+
+            <p>Easy • 35 min</p>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://i.pinimg.com/736x/1c/d6/49/1cd6495773d168250c1d6f031b3d50e5.jpg">
+
+            <h3>Banana Pancakes</h3>
+
+            <p>Easy • 20 min</p>
+
+        </div>
+
+    </div>
+
+    <a class="view-button" href="recipes.html">
+        View all recipes
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>Whisk & Wonder</h2>
+
+    <p>
+        You bring the ingredients. We bring the ideas.
+    </p>
+
+    <small>© 2026 Whisk & Wonder</small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

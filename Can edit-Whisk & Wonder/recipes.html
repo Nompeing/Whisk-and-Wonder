@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipes | Whisk & Wonder</title>
+
+    <link rel="stylesheet" href="recipes.css">
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="awning">
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="pink"></div>
+    </div>
+
+
+    <div class="logo">
+
+        <div class="logo-star">✦</div>
+
+        <div>
+            <h1>Whisk & Wonder</h1>
+            <p>Find something delicious</p>
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            <span>⌂</span>
+            Home
+        </a>
+
+        <a href="recipes.html" class="active">
+            <span>♡</span>
+            Recipes
+        </a>
+
+        <a href="ingredients.html">
+            <span>✿</span>
+            Ingredients
+        </a>
+
+        <a href="favorites.html">
+            <span>♥</span>
+            Favorites
+        </a>
+
+        <a href="contact.html">
+            <span>✉</span>
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <p>EXPLORE SOMETHING DELICIOUS</p>
+
+    <h2>Recipe Collection</h2>
+
+    <span>
+        15 simple recipes waiting to be discovered.
+    </span>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="controls">
+
+    <input
+        type="text"
+        id="recipeSearch"
+        placeholder="Search recipes..."
+        onkeyup="filterRecipes()"
+    >
+
+    <select id="difficultyFilter" onchange="filterRecipes()">
+
+        <option value="all">All difficulties</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+
+    </select>
+
+</section>
+
+
+<!-- RECIPES -->
+
+<section class="recipe-grid" id="recipeGrid">
+
+
+    <div class="recipe-card"
+         data-name="strawberry shortcake"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/1200x/63/64/21/6364217e46e1f7869aea3b9272f881de.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Strawberry Shortcake</h3>
+            <h4>⊹ ࣪ ˖🍰₊˚⊹♡</h4>
+
+            <p>Fresh strawberries and soft cream.</p>
+
+            <div class="details">
+                <span>25 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Strawberry Shortcake')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="chocolate brownies"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/8c/3d/18/8c3d1847de58051eb8a8fc4b2f681cdf.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Chocolate Brownies</h3>
+            <h4>♡🍫₊˚⊹♡</h4>
+
+            <p>Rich, soft and chocolatey.</p>
+
+            <div class="details">
+                <span>35 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Chocolate Brownies')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="banana pancakes"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/1c/d6/49/1cd6495773d168250c1d6f031b3d50e5.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Banana Pancakes</h3>
+            <h4>•' 🍌*• ☆</h4>
+            
+            <p>Fluffy pancakes with sweet banana.</p>
+
+            <div class="details">
+                <span>20 min</span>
+                <span>♥ Breakfast</span>
+            </div>
+
+            <button onclick="showRecipe('Banana Pancakes')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="blueberry muffins"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/23/15/ea/2315eaff522ac906bde486348c8515c5.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Blueberry Muffins</h3>
+            <h4>⋆⁺ʚ🫐ɞ₊✧</h4>
+
+            <p>Soft muffins filled with blueberries.</p>
+
+            <div class="details">
+                <span>30 min</span>
+                <span>♥ Baking</span>
+            </div>
+
+            <button onclick="showRecipe('Blueberry Muffins')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="mango sticky rice"
+         data-difficulty="medium">
+
+        <img src="https://i.pinimg.com/736x/11/5b/3c/115b3c74d1f53594dc8eedf7d20da016.jpg">
+
+        <div class="card-info">
+
+            <span class="tag medium">MEDIUM</span>
+
+            <h3>Mango Sticky Rice</h3>
+            <h4>⋆｡‧˚ʚ🥭ɞ˚‧｡⋆</h4>
+
+            <p>Sweet mango with creamy coconut rice.</p>
+
+            <div class="details">
+                <span>40 min</span>
+                <span>♥ Thai</span>
+            </div>
+
+            <button onclick="showRecipe('Mango Sticky Rice')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="lemon cookies"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/f6/7d/bc/f67dbcb6c578fe179ddb083c55807a23.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Lemon Cookies</h3>
+            <h4>˙ ✩°˖🍋 ⋆｡˚</h4>
+
+            <p>Bright and refreshing cookies.</p>
+
+            <div class="details">
+                <span>25 min</span>
+                <span>♥ Baking</span>
+            </div>
+
+            <button onclick="showRecipe('Lemon Cookies')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="classic cheesecake"
+         data-difficulty="medium">
+
+        <img src="https://i.pinimg.com/1200x/14/38/d2/1438d2bf72fc91fe53f1c853757eafc9.jpg">
+
+        <div class="card-info">
+
+            <span class="tag medium">MEDIUM</span>
+
+            <h3>Classic Cheesecake</h3>
+            <h4>˚🧀 ⋆｡˚ ᡣ𐭩</h4>
+
+            <p>Creamy cheesecake with a biscuit base.</p>
+
+            <div class="details">
+                <span>60 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Classic Cheesecake')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="chocolate chip cookies"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/80/84/6c/80846c146480d9f268422ba7f5f7f03f.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Chocolate Chip Cookies</h3>
+            <h4>୧ ‧₊˚ 🍪 ⋅ ☆</h4>
+
+            <p>Classic cookies with chocolate chips.</p>
+
+            <div class="details">
+                <span>25 min</span>
+                <span>♥ Baking</span>
+            </div>
+
+            <button onclick="showRecipe('Chocolate Chip Cookies')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="tiramisu"
+         data-difficulty="medium">
+
+        <img src="https://i.pinimg.com/1200x/67/28/39/6728392010b70b2dccbf9a35ead1a9a4.jpg">
+
+        <div class="card-info">
+
+            <span class="tag medium">MEDIUM</span>
+
+            <h3>Tiramisu</h3>
+            <h4>‧𓍢ִ໋☕ ׂ 𓈒 ⋆ ۪ </h4>
+
+            <p>Coffee, cream and soft biscuits.</p>
+
+            <div class="details">
+                <span>45 min</span>
+                <span>♥ Italian</span>
+            </div>
+
+            <button onclick="showRecipe('Tiramisu')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="apple crumble"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/3c/c2/65/3cc265a4c646448881c53e3d53258cbe.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Apple Crumble</h3>
+            <h4>‧₊ ᵎᵎ 🍎 ⋅ ˚✮</h4>
+
+            <p>Warm apples with a crunchy topping.</p>
+
+            <div class="details">
+                <span>40 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Apple Crumble')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="matcha roll cake"
+         data-difficulty="medium">
+
+        <img src="https://i.pinimg.com/1200x/c2/c0/32/c2c032ca68fd6960984e3f5c1b0ebd25.jpg">
+
+        <div class="card-info">
+
+            <span class="tag medium">MEDIUM</span>
+
+            <h3>Matcha Roll Cake</h3>
+            <h4>°🍵⋆.*:･</h4>
+
+            <p>Soft matcha cake with cream.</p>
+
+            <div class="details">
+                <span>50 min</span>
+                <span>♥ Japanese</span>
+            </div>
+
+            <button onclick="showRecipe('Matcha Roll Cake')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="coconut pudding"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/1200x/76/69/e0/7669e083e8c18a8589f61ccd1e50d127.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Coconut Pudding</h3>
+            <h4>⋆ ༅˚🥥.࿓•</h4>
+
+            <p>Soft and creamy coconut dessert.</p>
+
+            <div class="details">
+                <span>25 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Coconut Pudding')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="oreo cheesecake cups"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/1200x/ed/94/f0/ed94f091bba40e9fc4c5f881a34d6334.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Oreo Cheesecake Cups</h3>
+            <h4>୧ ‧₊˚ 🥛 ⋅ ☆</h4>
+
+            <p>A creamy no-bake chocolate treat.</p>
+
+            <div class="details">
+                <span>20 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Oreo Cheesecake Cups')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="strawberry crepes"
+         data-difficulty="medium">
+
+        <img src="https://i.pinimg.com/1200x/8a/0b/66/8a0b66d9c5442a85fc53f11b175c53cf.jpg">
+
+        <div class="card-info">
+
+            <span class="tag medium">MEDIUM</span>
+
+            <h3>Strawberry Crepes</h3>
+            <h4>⋆｡‧˚ʚ🍓ɞ˚‧｡⋆</h4>
+
+            <p>Thin crepes with strawberries and cream.</p>
+
+            <div class="details">
+                <span>30 min</span>
+                <span>♥ Breakfast</span>
+            </div>
+
+            <button onclick="showRecipe('Strawberry Crepes')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="recipe-card"
+         data-name="strawberry milk pudding"
+         data-difficulty="easy">
+
+        <img src="https://i.pinimg.com/736x/9a/58/e7/9a58e70717a1ead4b3b631524791dd95.jpg">
+
+        <div class="card-info">
+
+            <span class="tag">EASY</span>
+
+            <h3>Strawberry Milk Pudding</h3>
+            <h4>୧ ‧₊˚ 🍮 ⋅ ☆</h4>
+
+            <p>Sweet, creamy and strawberry flavored.</p>
+
+            <div class="details">
+                <span>25 min</span>
+                <span>♥ Dessert</span>
+            </div>
+
+            <button onclick="showRecipe('Strawberry Milk Pudding')">
+                View Recipe
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RECIPE POPUP -->
+
+<div id="recipeModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeRecipe()">×</button>
+
+        <h2 id="modalTitle"></h2>
+
+        <h3>Ingredients</h3>
+
+        <ul id="modalIngredients"></ul>
+
+        <h3>Instructions</h3>
+
+        <p id="modalInstructions"></p>
+
+        <button class="favorite-button" onclick="saveCurrentRecipe()">
+            ♥ Add to Favorites
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <h2>Whisk & Wonder</h2>
+
+    <p>You bring the ingredients. We bring the ideas.</p>
+
+    <small>© 2026 Whisk & Wonder</small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
